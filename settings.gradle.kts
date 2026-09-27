@@ -1,5 +1,9 @@
 pluginManagement {
     repositories {
+        // Copia local de KSP (81 MB) descargada aparte: evita volver a bajarla con conexión lenta.
+        mavenLocal {
+            content { includeModule("com.google.devtools.ksp", "symbol-processing-aa-embeddable") }
+        }
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -17,10 +21,13 @@ plugins {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        mavenLocal {
+            content { includeModule("com.google.devtools.ksp", "symbol-processing-aa-embeddable") }
+        }
         google()
         mavenCentral()
     }
 }
 
-rootProject.name = "RutaLog Perú"
+rootProject.name = "RutaLog Cliente"
 include(":app")

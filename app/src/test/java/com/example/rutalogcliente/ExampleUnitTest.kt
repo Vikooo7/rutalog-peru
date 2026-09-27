@@ -1,4 +1,4 @@
-package com.example.rutalogper
+package com.example.rutalogcliente
 
 import org.junit.Test
 

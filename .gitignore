@@ -17,3 +17,6 @@ local.properties
 /.claude
 /.idea/deploymentTargetSelector.xml
 /.idea/deviceManager.xml
+/apk
+/apk.zip
+*.apk
